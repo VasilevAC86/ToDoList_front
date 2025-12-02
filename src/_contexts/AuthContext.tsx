@@ -26,7 +26,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   // Функция для входа пользователя
   const login = async (Login: string, Password: string) => {
-    const authToken = await fetch(`https://localhost:7075/api/Auth/login`, {
+    const authToken = await fetch(`http://localhost:8080/api/Auth/login`, { // порт прописываем принудительно в back
       method: "POST",
       headers: {
         "Content-Type": "application/json",

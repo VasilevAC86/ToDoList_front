@@ -33,7 +33,7 @@ export default function LoginForm()
       return;
     }
 
-    const status = await fetch(`https://localhost:7075/api/Auth/register`, {
+    const status = await fetch(`http://localhost:8080/api/Auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
